@@ -1,0 +1,21 @@
+body {
+  font-family: 'Open Sans', sans-serif, 'Helvetica Neue', sans-serif;
+}
+
+main {
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  a, a:link, a:visited, a:hover, a:active {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: blue;
+  }
+  a.current {
+    color: red;
+  }
+}
