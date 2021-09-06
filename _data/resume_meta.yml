@@ -1,0 +1,15 @@
+cv_grouping:
+  - development
+  - education
+  - academic
+  - independent
+
+resumes:
+  - name: CS
+    items:
+      -
+  - name: Math
+    items:
+      -
+
+
