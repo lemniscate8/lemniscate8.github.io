@@ -1,3 +1,15 @@
+# - name:
+#   type: []
+#   role:
+#   organization:
+#     location:
+#     primary:
+#     suborg:
+#   description:
+#     -
+#   start_date:
+#   end_date:
+
 - name: waves
   type: [development, academic]
   role: C++ Frontend Developer
@@ -7,8 +19,8 @@
   description:
     - Created new graphical user interfaces for C++ driven web applications in the header-only library, Empirical
     - Suggested a new schema for component inheritance to ensure that prefabricated web components are extensible
-  start_date: 2021-06
-  end_date: 2021-08
+  start_date: 2021-06-01
+  end_date: 2021-08-01
 
 - name: paralibrary
   type: [development]
@@ -19,8 +31,8 @@
   description:
     - Planned interface for a progressive web-app to facilitate sharing physical books between neighbors and friends
     - Designed UI and control flow for loans management by users
-  start_date: 2020-01
-  end_date: 2020-07
+  start_date: 2020-01-01
+  end_date: 2020-07-01
 
 - name: faithlife
   type: [development]
@@ -31,8 +43,8 @@
   description:
     - Wrote frontend components in React for the Communications web-app in Equip, a church management tool
     - Created unit tests for backend functions in C# to store and retrieve user data from a SQL database
-  start_date: 2019-06
-  end_date: 2019-08
+  start_date: 2019-06-01
+  end_date: 2019-08-01
 
 - name: ta
   type: [educational]
@@ -44,7 +56,7 @@
     - Plan and execute discussion sections using cutting edge distance learning techniques
     - Provide support through practice sessions and affirmation to build confidence in mathematical abilities
     - Track improvements in mathematical skill and technique
-  start_date: 2020-09
+  start_date: 2020-09-01
   end_date:
 
 - name: tutoring
@@ -55,8 +67,8 @@
     suborg: Mathematics Dept.
   description:
     - Tutored students in the calculus series and statistics courses
-  start_date: 2017-09
-  end_date: 2020-07
+  start_date: 2017-09-01
+  end_date: 2020-07-01
 
 - name: spectraltechwriter
   type: [academic]
@@ -65,11 +77,11 @@
     location: Seattle, WA
     primary: COMAP’s Mathematical Contest in Modeling
   description:
-    - Worked in a team of 3 to write and submit a solution paper in 5 days (Problem D, Team \#1908810)
+    - "Worked in a team of 3 to write and submit a solution paper in 5 days (Problem D, Team #1908810)"
     - Leveraged spectral graph theory, agent-based modeling, and differential equations to model flow on a network
     - Identified potential bottlenecks in the Louvre’s floor-plan and gave recommendations for evacuation strategy
-  start_date: 2019-02
-  end_date: 2019-02
+  start_date: 2019-02-01
+  end_date: 2019-02-01
 
 - name: suriem
   type: [academic]
@@ -80,8 +92,8 @@
   description:
     - Used rigorous mathematical techniques to connect dynamics of a random walk model to Brownian motion
     - Derived equations that could allow for a novel method of population density estimation
-  start_date: 2018-05
-  end_date: 2018-07
+  start_date: 2018-05-01
+  end_date: 2018-07-01
 
 - name: appdev
   type: [academic, development]
@@ -92,8 +104,8 @@
   description:
     - Created a front end HTML page prettified with Bootstrap to interface with a database
     - Wrote CRUD functionality for a SQL database with Node.js
-  start_date:
-  end_date:
+  start_date: 2018-05-01
+  end_date: 2018-05-01
 
 - name: datatechwriter
   type: [academic]
@@ -102,11 +114,11 @@
     location: Seattle, WA
     primary: COMAP’s Mathematical Contest in Modeling
   description:
-    - Worked in a team of 3 to write and submit a solution paper in 5 days (Problem C, Team \#77711)
+    - "Worked in a team of 3 to write and submit a solution paper in 5 days (Problem C, Team #77711)"
     - Experimented in R to find patterns in the states’ energy usage dataset of 10,000+ data points
     - Created a mathematical model to explain states’ pattern of renewable energy consumption
-  start_date: 2018-02
-  end_date: 2018-02
+  start_date: 2018-02-01
+  end_date: 2018-02-01
 
 - name: flocking
   type: [independent, development]
@@ -118,8 +130,8 @@
   description:
     - Wrote an open source application in Javascript with the Processing library to simulate flocking behavior
     - Generate interaction matrices to explore complex emergent behavior and group dynamics
-  start_date: 2019-02
-  end_date: 2019-02
+  start_date: 2019-02-01
+  end_date: 2019-02-01
 
 - name: network
   type: [independent, development]
@@ -130,12 +142,12 @@
     primary: Seattle Pacific University
   description:
     - Implemented a "Turing machine on a graph" process to search for complex behavior in simple rule sets
-    - Inspired by Southwell, Huang, and Canning’s paper, Complex Networks from Simple Rules
-  start_date: 2018-01
-  end_date: 2018-01
+    - Inspired by Southwell, Huang, and Canning’s paper, <i>Complex Networks from Simple Rules</i>
+  start_date: 2018-01-01
+  end_date: 2018-01-01
 
 - name: folding
-  type: []
+  type: [independent, development]
   role: Programmer
   project: Color Space Folding
   organization:
@@ -144,8 +156,8 @@
   description:
     - Implemented the Kohonen self-organizing map algorithm for dimensionality reduction to reduce points in the RGB colorspace to a two dimensional surface
     - Wrote a function to create STL files for the generated surfaces for 3D printing
-  start_date: 2017-08
-  end_date: 2017-08
+  start_date: 2017-08-01
+  end_date: 2017-08-01
 
 # - name:
 #   type: []

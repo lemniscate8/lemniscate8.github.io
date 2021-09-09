@@ -1,15 +1,15 @@
 cv_grouping:
   - development
-  - education
+  - educational
   - academic
   - independent
 
 resumes:
   - name: CS
     items:
-      -
+      - waves
   - name: Math
     items:
-      -
+      - ta
 
 
