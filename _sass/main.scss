@@ -35,16 +35,16 @@ div.trad-cv {
 
 }
 
-nav {
+nav.main {
   display: flex;
   flex-flow: row-reverse wrap;
-  a, a:link, a:visited, a:hover, a:active {
+  a, a:link, a:visited, a:hover {
     display: block;
     padding: 6px 12px;
     text-decoration: none;
     color: blue;
   }
-  a.current {
+  a.active {
     color: red;
   }
 }
