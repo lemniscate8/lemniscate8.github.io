@@ -1,8 +1,6 @@
 - name: Home
   link: /
-- name: About
-  link: /about/
-- name: Resume
+- name: Resume/CV
   link: /resume/
 - name: Projects
   link: /projects/

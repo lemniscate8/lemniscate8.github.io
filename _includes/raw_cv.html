@@ -1,6 +1,29 @@
 <div class="traditional-cv">
+  <div class="education">
+  {%- for item in site.data.education -%}
+    <div class="meta">
+      {%- for award in item.awards -%}
+      <div class="award">
+        <div class="degree">
+          <b class="title">{{ award.title }}</b>
+          {%- if award.honors -%}
+            <i class="honors">{{ award.honors }}</i>
+          {%- endif -%}
+        </div>
+        <span class="date">
+          {{ award.date | date: "%B %Y" }}
+          {% if award.comment -%}
+            {{ award.comment }}
+          {%- endif -%}
+        </span>
 
-{%- for exp in site.data.experience -%}
+      </div>
+      {%- endfor -%}
+      <i class="inst">{{ item.institution }}</i>
+    </div>
+  {%- endfor -%}
+  </div>
+  {%- for exp in site.data.experience -%}
   <div class="exp {{ exp.type | first }} collapse-trigger" data-toggle-control="{{ exp.name }}">
     <div class="meta">
       <div class="job">
@@ -44,6 +67,6 @@
       {%- endfor -%}
     </ul>
   </div>
-{%- endfor -%}
+  {%- endfor -%}
 </div>
 

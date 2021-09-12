@@ -1,9 +1,3 @@
-cv_grouping:
-  - development
-  - educational
-  - academic
-  - independent
-
 resumes:
   - name: CS
     items:
@@ -11,5 +5,3 @@ resumes:
   - name: Math
     items:
       - ta
-
-

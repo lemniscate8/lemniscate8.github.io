@@ -1,0 +1,18 @@
+- name: ucd
+  institution: University of California - Davis
+  awards:
+    - title: PhD in Applied Mathematics
+      date: 2026-06-01
+      comment: (est.)
+
+- name: spu
+  institution: Seattle Pacific University
+  awards:
+    - title: BS in Mathematics
+      date: 2020-06-01
+      honors: summa cum laude
+    - title: BS in Computer Science
+      date: 2020-06-01
+      honors: summa cum laude
+
+

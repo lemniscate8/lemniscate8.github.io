@@ -73,6 +73,30 @@ nav.main-nav {
   // display: flex;
   // flex-flow: column nowrap;
 
+  .education::before {
+    content: "Education";
+    @extend .header-before;
+  }
+  .education {
+    .meta {
+      .award {
+        display: flex;
+        flex-flow: row wrap;
+        .date {
+          margin-left: auto;
+        }
+        .degree {
+          .honors::before {
+            content: ", "
+          }
+        }
+      }
+    }
+    .meta:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
   .header-before {
     display: block;
     font-size: 1.17em;
