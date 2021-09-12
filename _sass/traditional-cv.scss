@@ -1,0 +1,108 @@
+.traditional-cv {
+  max-width: 595px;
+  margin: 0px auto;
+  // display: flex;
+  // flex-flow: column nowrap;
+
+  .education::before {
+    content: "Education";
+    @extend .header-before;
+  }
+  .education {
+    .meta {
+      .award {
+        display: flex;
+        flex-flow: row wrap;
+        .date {
+          margin-left: auto;
+        }
+        .degree {
+          .honors::before {
+            content: ", "
+          }
+        }
+      }
+    }
+    .meta:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
+  .header-before {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 0.5em 0;
+    margin: 1em 0;
+  }
+
+  .exp.development::before {
+    content: "Development Experience";
+    @extend .header-before;
+  }
+  .exp.development ~ .exp.development::before {
+    display: none;
+  }
+
+  .exp.teaching::before {
+    content: "Teaching Experience";
+    @extend .header-before;
+  }
+  .exp.teaching ~ .exp.teaching::before {
+    display: none;
+  }
+
+  .exp.academic::before {
+    content: "Academic Experience";
+    @extend .header-before;
+  }
+  .exp.academic ~ .exp.academic::before {
+    display: none;
+  }
+
+  .exp.independent::before {
+    content: "Independent Projects";
+    @extend .header-before;
+  }
+  .exp.independent ~ .exp.independent::before {
+    display: none;
+  }
+
+  .exp {
+    margin: 0.5em 0;
+    cursor: pointer;
+
+    .meta {
+      display: flex;
+      flex-flow: row wrap;
+      .job {
+        display: flex;
+        flex-flow: column nowrap;
+        .project::before {
+          content: " – ";
+        }
+        .org {
+          font-size: .9em;
+          span ~ span::before {
+            content: " - "
+          }
+        }
+      }
+      .date {
+        margin-left: auto;
+        span ~ span::before {
+          content: " – "
+        }
+      }
+    }
+    .description {
+      display: none;
+      margin: .25em 0;
+      .item::after {
+        content: ".";
+      }
+    }
+  }
+}

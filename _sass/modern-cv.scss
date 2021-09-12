@@ -1,0 +1,35 @@
+.modern-cv {
+  max-width: 595px;
+  margin: 0px auto;
+  .exp:not(:last-child) {
+    margin-bottom: 2em;
+  }
+  .exp {
+    padding: 1em;
+    box-shadow: 0 6px 8px -8px #BBB, 0 -6px 8px -8px #BBB;
+    .description {
+      margin-top: 0.5em;
+      margin-bottom: 0;
+      overflow: hidden;
+      max-height: 0px;
+      transition-property: max-height, box-shadow;
+      transition-duration: .5s;
+      transition-timing-function: ease-in-out;
+      .item {
+        opacity: .75;
+      }
+    }
+  }
+  .exp:hover {
+    .role {
+      color: #88F;
+    }
+    box-shadow: 0 6px 8px -8px #88F, 0 -6px 8px -8px #88F;
+    .description{
+      max-height: 200px;
+      .item:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

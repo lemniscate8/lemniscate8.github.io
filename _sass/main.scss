@@ -7,6 +7,19 @@ article, .content {
   margin: 1.5em;
 }
 
+.portrait {
+  max-width: 10rem;
+  float: left;
+  object-fit: contain;
+  border-radius: 1em;
+  margin: 0 1em;
+}
+
+.panel {
+  margin: 0 auto;
+  display: flex;
+}
+
 div.nav-bar {
   position: sticky;
   top: 0;
@@ -31,147 +44,6 @@ nav.main-nav {
   }
 }
 
-.modern-cv {
-  max-width: 595px;
-  margin: 0px auto;
-  .exp:not(:last-child) {
-    margin-bottom: 2em;
-  }
-  .exp {
-    padding: 1em;
-    box-shadow: 0 6px 8px -8px #BBB, 0 -6px 8px -8px #BBB;
-    .description {
-      margin-top: 0.5em;
-      margin-bottom: 0;
-      overflow: hidden;
-      max-height: 0px;
-      transition-property: max-height, box-shadow;
-      transition-duration: .5s;
-      transition-timing-function: ease-in-out;
-      .item {
-        opacity: .75;
-      }
-    }
-  }
-  .exp:hover {
-    .role {
-      color: #88F;
-    }
-    box-shadow: 0 6px 8px -8px #88F, 0 -6px 8px -8px #88F;
-    .description{
-      max-height: 200px;
-      .item:hover {
-        opacity: 1;
-      }
-    }
-  }
-}
 
-.traditional-cv {
-  max-width: 595px;
-  margin: 0px auto;
-  // display: flex;
-  // flex-flow: column nowrap;
 
-  .education::before {
-    content: "Education";
-    @extend .header-before;
-  }
-  .education {
-    .meta {
-      .award {
-        display: flex;
-        flex-flow: row wrap;
-        .date {
-          margin-left: auto;
-        }
-        .degree {
-          .honors::before {
-            content: ", "
-          }
-        }
-      }
-    }
-    .meta:not(:last-child) {
-      margin-bottom: 1em;
-    }
-  }
 
-  .header-before {
-    display: block;
-    font-size: 1.17em;
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 1px solid black;
-    padding: 0.5em 0;
-    margin: 1em 0;
-  }
-
-  .exp.development::before {
-    content: "Development Experience";
-    @extend .header-before;
-  }
-  .exp.development ~ .exp.development::before {
-    display: none;
-  }
-
-  .exp.teaching::before {
-    content: "Teaching Experience";
-    @extend .header-before;
-  }
-  .exp.teaching ~ .exp.teaching::before {
-    display: none;
-  }
-
-  .exp.academic::before {
-    content: "Academic Experience";
-    @extend .header-before;
-  }
-  .exp.academic ~ .exp.academic::before {
-    display: none;
-  }
-
-  .exp.independent::before {
-    content: "Independent Projects";
-    @extend .header-before;
-  }
-  .exp.independent ~ .exp.independent::before {
-    display: none;
-  }
-
-  .exp {
-    margin: 0.5em 0;
-    cursor: pointer;
-
-    .meta {
-      display: flex;
-      flex-flow: row wrap;
-      .job {
-        display: flex;
-        flex-flow: column nowrap;
-        .project::before {
-          content: " – ";
-        }
-        .org {
-          font-size: .9em;
-          span ~ span::before {
-            content: " - "
-          }
-        }
-      }
-      .date {
-        margin-left: auto;
-        span ~ span::before {
-          content: " – "
-        }
-      }
-    }
-    .description {
-      display: none;
-      margin: .25em 0;
-      .item::after {
-        content: ".";
-      }
-    }
-  }
-}
