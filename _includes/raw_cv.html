@@ -1,0 +1,49 @@
+<div class="traditional-cv">
+
+{%- for exp in site.data.experience -%}
+  <div class="exp {{ exp.type | first }} collapse-trigger" data-toggle-control="{{ exp.name }}">
+    <div class="meta">
+      <div class="job">
+        <div class="title">
+          <b class="role">{{ exp.role }}</b>
+          {%- if exp.project -%}
+          <span class="project">{{ exp.project }}</span>
+          {%- endif -%}
+        </div>
+        <i class="org">
+          {%- if exp.organization.suborg -%}
+            <span>{{ exp.organization.suborg }}</span>
+          {% endif -%}
+          <span>{{ exp.organization.primary }}</span>
+        </i>
+      </div>
+      <div class="date">
+        {%- assign start_month = exp.start_date | date: "%B" -%}
+        {%- assign end_month = exp.end_date | date: "%B" -%}
+        {%- assign end_year = exp.end_date | date: "%Y" -%}
+        {%- if start_month != end_month -%}
+          <span>{{ start_month }}
+          {% assign start_year = exp.start_date | date: "%Y" -%}
+          {%- if start_year != end_year -%}
+            {{ start_year }}
+          {% endif %}
+          </span>
+        {% endif -%}
+        <span>
+        {%- if end_year != "9999" -%}
+          {{ exp.end_date | date: "%B %Y" }}
+        {%- else -%}
+          Present
+        {% endif -%}
+        </span>
+      </div>
+    </div>
+    <ul class="description" data-toggle-group="{{ exp.name }}" data-toggle-collapsed>
+      {%- for line in exp.description -%}
+      <li class="item">{{ line }}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endfor -%}
+</div>
+

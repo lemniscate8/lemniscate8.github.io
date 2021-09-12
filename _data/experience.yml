@@ -47,7 +47,7 @@
   end_date: 2019-08-01
 
 - name: ta
-  type: [educational]
+  type: [teaching]
   role: Teaching Assistant
   organization:
     primary: University of California, Davis
@@ -57,16 +57,16 @@
     - Provide support through practice sessions and affirmation to build confidence in mathematical abilities
     - Track improvements in mathematical skill and technique
   start_date: 2020-09-01
-  end_date:
+  end_date: 9999-01-01 # Year of 9999 to indicate no end date yet
 
 - name: tutoring
-  type: [educational]
+  type: [teaching]
   role: Tutor, TA and Grader
   organization:
     primary: Seattle Pacific University
     suborg: Mathematics Dept.
   description:
-    - Tutored students in the calculus series and statistics courses
+    - Tutored students taking the calculus series and statistics classes
   start_date: 2017-09-01
   end_date: 2020-07-01
 
