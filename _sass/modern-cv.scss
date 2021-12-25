@@ -1,4 +1,7 @@
 .modern-cv {
+  .education {
+    display: none;
+  }
   max-width: 595px;
   margin: 0px auto;
   .exp:not(:last-child) {
@@ -6,7 +9,10 @@
   }
   .exp {
     padding: 1em;
-    box-shadow: 0 6px 8px -8px #BBB, 0 -6px 8px -8px #BBB;
+    box-shadow: $glow-top $text-color, $glow-bottom $text-color;
+    .project {
+      margin-left: .5rem;
+    }
     .description {
       margin-top: 0.5em;
       margin-bottom: 0;
@@ -15,21 +21,18 @@
       transition-property: max-height, box-shadow;
       transition-duration: .5s;
       transition-timing-function: ease-in-out;
-      .item {
-        opacity: .75;
-      }
     }
   }
   .exp:hover {
     .role {
-      color: #88F;
+      color: $success;
     }
-    box-shadow: 0 6px 8px -8px #88F, 0 -6px 8px -8px #88F;
+    box-shadow: $glow-top $success, $glow-bottom $success;
     .description{
       max-height: 200px;
-      .item:hover {
-        opacity: 1;
-      }
+      // .item:hover {
+      //   color: $success;
+      // }
     }
   }
 }

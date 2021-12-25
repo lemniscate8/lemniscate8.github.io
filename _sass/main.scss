@@ -1,18 +1,52 @@
-body {
-  font-family: 'Open Sans', sans-serif, 'Helvetica Neue', sans-serif;
+$base-color: #5D675B;
+$text-color: #d1e6cc;
+$primary: #F78E69;
+$secondary: #F1BB87;
+$warning: #F7EF99;
+$success: #ABE188;
+
+$glow-bottom: 0 10px 8px -10px;
+$glow-top: 0 -10px 8px -10px;
+
+html {
+  //font-family: 'Open Sans', sans-serif, 'Helvetica Neue', sans-serif;
+  font-family: 'EB Garamond';
   margin: 0;
+  background-color: $base-color;
+  color: $text-color;
+  border-color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary;
+}
+
+body {
+  margin: 0px;
 }
 
 article, .content {
   margin: 1.5em;
 }
 
-.portrait {
-  max-width: 10rem;
-  float: left;
-  object-fit: contain;
-  border-radius: 1em;
-  margin: 0 1em;
+.img-header {
+  display: flex;
+  :last-child {
+    margin-left: auto;
+  }
+}
+
+.circle-img {
+  border: .5rem solid $text-color;
+  border-radius: 100%;
+
+  img {
+    max-width: 4rem;
+    max-height: 4rem;
+    float: left;
+    object-fit: cover;
+    border-radius: 100%;
+  }
 }
 
 .panel {
@@ -24,7 +58,8 @@ div.nav-bar {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: white;
+  background-color: $base-color;
+  border-bottom: .25rem solid $text-color;
 }
 
 nav.main-nav {
@@ -37,10 +72,11 @@ nav.main-nav {
     display: block;
     padding: 6px 12px;
     text-decoration: none;
-    color: blue;
+    color: $secondary;
   }
   a.active {
-    color: red;
+    color: $success;
+    box-shadow: $glow-bottom $success;
   }
 }
 
