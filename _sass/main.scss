@@ -46,7 +46,6 @@ div.wrapper {
 }
 
 
-
 .img-header {
   display: flex;
 
@@ -56,7 +55,7 @@ div.wrapper {
 }
 
 .circle-img {
-  border: .5rem solid $secondary;
+  border: .5rem solid $primary;
   border-radius: 100%;
 
   img {
@@ -77,8 +76,7 @@ div.wrapper {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: $primary;
-  border-top: 1rem solid $secondary;
+  // background-color: $primary;
   border-bottom: .25rem solid $secondary;
 }
 
