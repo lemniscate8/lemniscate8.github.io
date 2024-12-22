@@ -32,10 +32,18 @@ body {
   margin: 0px;
 }
 
-article,
-.content {
-  margin: 1.5em;
+main.page-content {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
+
+div.wrapper {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  max-width: 800px;
+}
+
+
 
 .img-header {
   display: flex;
@@ -46,7 +54,7 @@ article,
 }
 
 .circle-img {
-  border: .5rem solid $text-color;
+  border: .5rem solid $secondary;
   border-radius: 100%;
 
   img {
@@ -63,12 +71,12 @@ article,
   display: flex;
 }
 
-div.nav-bar {
+.nav-bar {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: $base-color;
-  border-bottom: .25rem solid $text-color;
+  background-color: $primary;
+  border-bottom: .25rem solid $secondary;
 }
 
 nav.main-nav {
